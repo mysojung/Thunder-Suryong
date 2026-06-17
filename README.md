@@ -2,12 +2,15 @@
 
 A full-stack mobile application designed to help university students efficiently manage their schedules and implement cramming strategies ahead of midterm and final exams.
 
+
 ---
+
 
 ## 📌 Project Overview
 - **Genre**: EdTech / Productivity Mobile Application
 - **Description**: An intuitive exam management and cramming timer application. It features customized study tracking, a calendar interface, and registration pipelines tailored for students facing tight academic deadlines.
 - **Objective**: Developed as a collaborative full-stack project to master cross-platform mobile development (React Native) and scalable enterprise backend architecture (Spring Boot).
+
 
 ## 🎮 Key Features
 1. **Exam Schedule & Calendar Management**: Allows users to register, update, and track upcoming exam dates through an interactive calendar UI.
@@ -15,11 +18,13 @@ A full-stack mobile application designed to help university students efficiently
 3. **Full-Stack User Authentication**: Features a robust user registration and login pipeline securely handling member data between the client and backend server.
 4. **Data Verification**: Utilizes checkbox-based interactive terms of service and dynamic validation rules for user onboarding.
 
+
 ## 🛠️ Tech Stack & Architecture
 - **Frontend**: React Native, TypeScript, Expo
 - **Backend**: Java, Spring Boot, Spring Data JPA
 - **Database**: H2 Database (In-Memory for development and testing)
 - **Deployment & Workflow**: Gradle, npm / yarn
+
 
 ---
 
@@ -77,6 +82,7 @@ Thunder-Suryong/src/main/
       ```
 ---
 
+
 ## 🤝 Contributors
 
 **Frontend**
@@ -87,6 +93,7 @@ Thunder-Suryong/src/main/
 **Backend**
     - [@real-jeongeun-park](https://github.com/real-jeongeun-park)
     - [@hyejin-23](https://github.com/hyejin-23)
+
 
 
 ## 📌 Future Improvements (To-Do)
