@@ -1,114 +1,98 @@
-# ⚡️ 벼락수룡
+# ⚡ Thunder-Suryong (벼락수룡)
 
-수룡이가 벼락치기를 도와주는 시험 계획 관리 앱입니다!
-
-React Native + Expo + Spring Boot를 기반으로 제작된 앱 프로젝트입니다.
+A full-stack mobile application designed to help university students efficiently manage their schedules and implement cramming strategies ahead of midterm and final exams.
 
 ---
 
-## 🛠 언어 및 기술 스택
+## 📌 Project Overview
+- **Genre**: EdTech / Productivity Mobile Application
+- **Description**: An intuitive exam management and cramming timer application. It features customized study tracking, a calendar interface, and registration pipelines tailored for students facing tight academic deadlines.
+- **Objective**: Developed as a collaborative full-stack project to master cross-platform mobile development (React Native) and scalable enterprise backend architecture (Spring Boot).
 
-- **React Native**
-- **TypeScript**
-- **JavaScript**
-- **Spring Boot**
-- **Expo**
+## 🎮 Key Features
+1. **Exam Schedule & Calendar Management**: Allows users to register, update, and track upcoming exam dates through an interactive calendar UI.
+2. **Cramming Timer with Mascot Interaction**: Implements a dedicated study timer integrated with a gamified mascot character to boost engagement during high-pressure study sessions.
+3. **Full-Stack User Authentication**: Features a robust user registration and login pipeline securely handling member data between the client and backend server.
+4. **Data Verification**: Utilizes checkbox-based interactive terms of service and dynamic validation rules for user onboarding.
+
+## 🛠️ Tech Stack & Architecture
+- **Frontend**: React Native, TypeScript, Expo
+- **Backend**: Java, Spring Boot, Spring Data JPA
+- **Database**: H2 Database (In-Memory for development and testing)
+- **Deployment & Workflow**: Gradle, npm / yarn
 
 ---
 
-## 📁 프로젝트 구조
-
+## 📂 Project Structure
+```text
+Thunder-Suryong/src/main/
+ ├── frontend/             # React Native Mobile Client
+ │    ├── app/             # Page components (Index, Login, Signup, etc.)
+ │    ├── assets/          # Static assets (images, custom fonts)
+ │    ├── components/      # Reusable UI components
+ │    ├── constants/       # Global constant definitions and theme colors
+ │    ├── hooks/           # Custom React hooks for state and side-effects
+ │    └── scripts/         # Utility and helper scripts
+ │
+ └── java/com/byeraksuryong/ # Spring Boot Backend API
+      ├── api/             # API Endpoints and authentication tokens
+      ├── controller/      # URL mapping and request routing
+      ├── domain/          # Core domain entities and database mapping
+      ├── dto/             # Data Transfer Objects for secure data payload
+      ├── repository/      # Database access abstraction layers (JPA)
+      └── service/         # Core business logic implementation
 ```
-# Thunder-Suryong/src/main/
-..
-├── frontend/                         # 프론트엔드
-│   ├── app/                            # 페이지 컴포넌트들 (index, login, signup 등)
-│   ├── assets/                         # 이미지, 폰트 등 정적 자산
-│   ├── components/                     # 재사용 가능한 UI 컴포넌트
-│   ├── constants/                      # 상수값 저장
-│   ├── hooks/                          # 커스텀 훅
-│   ├── scripts/                        # 기타 유틸
-│   ├── node_modules/                  
-│   └── package.json      
-│
-└── java/com/byeraksuryong/           # 백엔드
-    ├── api/                            # API, 인증 토큰
-    ├── controller/                     # URL 매핑
-    ├── domain/                         # 도메인 객체
-    ├── dto/                            # 데이터 전송 객체
-    ├── repository/                     # DB 접근 구현
-    └── service/                        # 비즈니스 로직 구현
-
-```
 
 ---
 
-## 🚀 실행 방법
 
-**0. 레포지토리를 clone 또는 pull**
+## 🚀 How to Run
 
-### 🖼️ 프론트엔드 실행 방법
-   1. 패키지 설치
-      ```bash
+**0. Clone or pull the repository**
+
+### 🖼️ Frontend Setup
+    1. Package Installation
+     ```bash
       npm install
-      # 또는 yarn
+      # or yarn
       ```
 
-   2. Expo 실행
+      2. Run Expo
+        # Must be executed within frontend/
+       ```bash
+       cd npx expo start
+       ```
+       3. You can run it via the Expo Go app using the QR code, or check it instantly on a web simulator!
 
-      ```bash
-      # 반드시 frontend/ 에서 실행
-      cd npx expo start
-      ```
+       
+### 🌐️️️ Backend Setup
 
-   3. QR 코드를 통해 **Expo Go** 앱으로 실행하거나, 웹 시뮬레이터에서 바로 확인 가능!
+   1. [Install Java JDK 17 Version](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)      
 
-### 🌐️️️ 백엔드 실행 방법
-   1. [Java JDK 17 버전 설치](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
-      
+   2. [Install H2 DB](https://www.h2database.com/html/download.html) and [Create Tables](https://github.com/real-jeongeun-park/Thunder-Suryong/tree/master/sql)
 
-   2. [H2 DB 설치](https://www.h2database.com/html/download.html) 및 [테이블 생성](https://github.com/real-jeongeun-park/Thunder-Suryong/tree/master/sql)
-
-
-   3. 디렉터리 내 다음 경로의 파일을 빌드 및 실행 
+   3. Build and run the file at the following path within the directory:
       ```
       ./src/main/java/com/byearaksuryong/ByeraksuryongApplicaiton
       ```
 ---
 
-## 🧪 기능 요약
+## 🤝 Contributors
 
-25/07/04 기준
-
-- 시험 일정 등록/생성
-- 캘린더 기반 UI
-- 캐릭터와 함께하는 벼락치기 타이머
-- 로그인 / 회원가입 기능
-- 체크박스 기반 이용약관 확인
-
----
-
-## ✅ 작업자
-
-- **🖼️ 프론트엔드**
+**Frontend**
     - [@hee5k](https://github.com/hee5k)
     - [@rhkrdori](https://github.com/rhkrdori)
     - [@mysojung](https://github.com/mysojung)
 
-- **🌐️ 백엔드**
+**Backend**
     - [@real-jeongeun-park](https://github.com/real-jeongeun-park)
     - [@hyejin-23](https://github.com/hyejin-23)
 
----
 
-## ⚠️ 주의사항
+## 📌 Future Improvements (To-Do)
 
-- Expo SDK 버전은 `package.json`에 명시되어 있습니다.
+Integrate Firebase for push notifications and persistent cloud data synchronization.
 
----
+Implement user-customized push alert systems based on dynamic exam countdowns.
 
-## 📌 To Do
-
-- [ ] Firebase 연동
-- [ ] 사용자 맞춤 푸시 알림
-- [ ] 계획 관리 기능 추가
+Expand advanced study planner modules and analytics dashboards for long-term tracking.
